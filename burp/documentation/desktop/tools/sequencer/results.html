@@ -16,7 +16,7 @@
             <a href="../../../index.html">Documentation</a>
         </li>
         <li>
-            <a href="../../index.html">Desktop Editions</a>
+            <a href="../../index.html">Desktop editions</a>
         </li>
         <li>
             <a href="../index.html">Tools</a>
@@ -29,57 +29,42 @@
         </li>
     </ol>
 </section>
-<section class="container edition-labels">
-	<span class="pro-edition-feature-label">Professional</span>&nbsp;<span class="pro-edition-feature-label">Community</span>
+<section class="container editionlabels-wrapper">
+    <label class="editionlabel is-professional">Professional</label>
+    <label class="editionlabel is-community">Community</label>
 </section>
 <section class="maincontainer">
     <div class="container main">
-        <h1>Analysis Results</h1>
+        <h1>Analysis results</h1>
         <p>
             The results window contains full details of all of the tests performed.
         </p>
         <h2 id="summary">Summary</h2>
         <p>
-            The Summary tab is the first place to look to get an overall conclusion about the degree of randomness in
-            the sample. It includes a chart showing the number of bits of effective entropy at or above each
-            significance level. This provides an intuitive verdict on the number of bits that pass the randomness tests
-            for different possible significance levels.
+            The Summary tab is the first place to look to get an overall conclusion about the degree of randomness in the sample. It includes a chart showing the number of bits of effective entropy at or above each significance level. This provides an intuitive verdict on the number of bits that pass the randomness tests for different possible significance levels.
         </p>
         <p>
             The tab also reports an estimate of the reliability of the results, based on the number of samples.
         </p>
-        <h2 id="character-level-analysis-results"> Character-level Analysis results</h2>
+        <h2 id="character-level-analysis-results">Character-level analysis results</h2>
         <p>
-            The Character-level analysis tab shows the summary results from all character-level tests, and lets you
-            drill down into the detail of each character-level test. It also contains charts showing the size of the
-            character set at each position, and the maximum number of bits of entropy that can be contributed from each
-            character position.
+            The Character-level analysis tab shows the summary results from all character-level tests, and lets you drill down into the detail of each character-level test. It also contains charts showing the size of the character set at each position, and the maximum number of bits of entropy that can be contributed from each character position.
         </p>
         <p>
-            Note that the character-level tests are not reliable if the size of character sets employed is too large
-            relative to the number of samples. For example, if a token employs 64 different characters at each position,
-            and you only capture 100 samples, there is nowhere near enough sample data to draw any reliable conclusions
-            about the distribution of characters. For this reason, when there is a risk of unreliable results, Burp
-            Sequencer will automatically disable the character-level tests, to prevent the character-level results from
-            undermining the overall combined results from the analysis.
+            Note that the character-level tests are not reliable if the size of character sets employed is too large relative to the number of samples. For example, if a token employs 64 different characters at each position, and you only capture 100 samples, there is nowhere near enough sample data to draw any reliable conclusions about the distribution of characters. For this reason, when there is a risk of unreliable results, Burp Sequencer will automatically disable the character-level tests, to prevent the character-level results from undermining the overall combined results from the analysis.
         </p>
-        <h2 id="bit-level-analysis-results"> Bit-level Analysis results</h2>
+        <h2 id="bit-level-analysis-results">Bit-level analysis results</h2>
         <p>
-            The Bit-level analysis tab shows the summary results from all bit-level tests, and lets you drill down into
-            the detail of each bit-level test. This can let you gain a deeper understanding of the properties of the
-            sample, to identify the causes of any anomalies, and to assess the possibilities for token prediction.
+            The Bit-level analysis tab shows the summary results from all bit-level tests, and lets you drill down into the detail of each bit-level test. This can let you gain a deeper understanding of the properties of the sample, to identify the causes of any anomalies, and to assess the possibilities for token prediction.
         </p>
         <p>
-            There is also a chart showing the number of bits contributed by each character position in the token. This
-            will enable you cross-reference individual bits within the token back to the original character positions,
-            if you need to.
+            There is also a chart showing the number of bits contributed by each character position in the token. This will enable you cross-reference individual bits within the token back to the original character positions, if you need to.
         </p>
-        <h2 id="results-analysis-options">Results analysis Options</h2>
+        <h2 id="results-analysis-options">Results analysis options</h2>
         <p>
-            The Analysis options tab shows the options that were configured for the analysis. You can modify these and
-            redo the analysis if required.
+            The Analysis options tab shows the options that were configured for the analysis. You can modify these and redo the analysis if required.
         </p>
-        <div class="rounded-corner-box">
+        <div class="highlightedarea">
             <p>
                 See the following help for more details:
             </p>

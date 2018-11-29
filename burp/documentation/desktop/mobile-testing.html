@@ -16,43 +16,41 @@
             <a href="../index.html">Documentation</a>
         </li>
         <li>
-            <a href="index.html">Desktop Editions</a>
+            <a href="index.html">Desktop editions</a>
         </li>
         <li>
-            <a href="mobile-testing.html">Mobile Testing</a>
+            <a href="mobile-testing.html">Mobile testing</a>
         </li>
     </ol>
 </section>
-<section class="container edition-labels">
-	<span class="pro-edition-feature-label">Professional</span>&nbsp;<span class="pro-edition-feature-label">Community</span>
+<section class="container editionlabels-wrapper">
+    <label class="editionlabel is-professional">Professional</label>
+    <label class="editionlabel is-community">Community</label>
 </section>
 <section class="maincontainer">
     <div class="container main">
-        <h1>Mobile Testing</h1>
+        <h1>Mobile testing</h1>
         <p>
             You can use Burp Suite for performing security testing of mobile applications. To do this, you simply need to configure the mobile device to proxy its traffic via Burp Proxy. You can then intercept, view, and modify all of the HTTP/S requests and responses processed by the mobile app, and carry out <a href="penetration-testing/index.html">penetration testing using Burp</a> in the normal way.
         </p>
         <p>
             Successfully intercepting HTTP/S traffic from mobile applications can be non-trivial, due to problems setting the necessary proxy configuration, or due to SSL certificate pinning.
         </p>
-<p>
-            Burp Suite Mobile Assistant is a tool to facilitate testing of iOS apps with Burp Suite. It supports the
-            following key functions:
+        <p>
+            Burp Suite Mobile Assistant is a tool to facilitate testing of iOS apps with Burp Suite. It supports the following key functions:
         </p>
         <ul>
             <li>
-                It can modify the system-wide proxy settings of iOS devices so that HTTP(S) traffic can be easily
-                redirected to a running instance of Burp.
+                It can modify the system-wide proxy settings of iOS devices so that HTTP(S) traffic can be easily redirected to a running instance of Burp.
             </li>
             <li>
-                It can attempt to circumvent SSL certificate pinning in selected apps, allowing Burp Suite to break
-                their HTTPS connections and intercept, inspect and modify all traffic.
+                It can attempt to circumvent SSL certificate pinning in selected apps, allowing Burp Suite to break their HTTPS connections and intercept, inspect and modify all traffic.
             </li>
         </ul>
         <p>
             Burp Suite Mobile Assistant currently supports mobile devices running iOS versions 8.0 and onwards.
         </p>
-        <div class="rounded-corner-box">
+        <div class="highlightedarea">
             <p>
                 Use the links below for more details:
             </p>
@@ -65,11 +63,9 @@
                 </li>
             </ul>
         </div>
-        <div class="rounded-corner-box">
+        <div class="highlightedarea">
             <p>
-                <strong>Note:</strong> Burp Suite Mobile Assistant should not be used in situations where availability,
-                confidentiality or integrity of data is required. Mobile Assistant changes injected apps in a way that
-                significantly reduces the security of their communications.
+                <strong>Note:</strong> Burp Suite Mobile Assistant should not be used in situations where availability, confidentiality or integrity of data is required. Mobile Assistant changes injected apps in a way that significantly reduces the security of their communications.
             </p>
         </div>
     </div>

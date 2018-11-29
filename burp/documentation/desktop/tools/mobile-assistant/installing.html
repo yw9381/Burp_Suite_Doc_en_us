@@ -16,7 +16,7 @@
             <a href="../../../index.html">Documentation</a>
         </li>
         <li>
-            <a href="../../index.html">Desktop Editions</a>
+            <a href="../../index.html">Desktop editions</a>
         </li>
         <li>
             <a href="../index.html">Tools</a>
@@ -29,20 +29,16 @@
         </li>
     </ol>
 </section>
-<section class="container edition-labels">
-	<span class="pro-edition-feature-label">Professional</span>&nbsp;<span class="pro-edition-feature-label">Community</span>
+<section class="container editionlabels-wrapper">
+    <label class="editionlabel is-professional">Professional</label>
+    <label class="editionlabel is-community">Community</label>
 </section>
 <section class="maincontainer">
     <div class="container main">
         <h1>Installing Burp Suite Mobile Assistant</h1>
-        <div class="rounded-corner-box">
+        <div class="highlightedarea">
             <p>
-                <strong>Note:</strong> Burp Suite Mobile Assistant needs to be installed onto a jailbroken device due to
-                the nature of its features. Jailbreaks usually install the popular package manager Cydia which can be
-                used to install Mobile Assistant. Advanced users may prefer to obtain Mobile Assistant directly. They
-                can do this by pointing a web browser to Burp Suite's in-browser interface, e.g.
-                http://[burp-host-ip]:8080/mobileassistant.deb. Although Cydia is not strictly necessary, Mobile
-                Assistant depends on <a href="https://www.theiphonewiki.com/wiki/Cydia_Substrate">Cydia Substrate</a>.
+                <strong>Note:</strong> Burp Suite Mobile Assistant needs to be installed onto a jailbroken device due to the nature of its features. Jailbreaks usually install the popular package manager Cydia which can be used to install Mobile Assistant. Advanced users may prefer to obtain Mobile Assistant directly. They can do this by pointing a web browser to Burp Suite's in-browser interface, e.g. <span class="InlineCode">http://[burp-host-ip]:8080/mobileassistant.deb</span>. Although Cydia is not strictly necessary, Mobile Assistant depends on <a href="https://www.theiphonewiki.com/wiki/Cydia_Substrate">Cydia Substrate</a>.
             </p>
         </div>
         <p>
@@ -50,8 +46,7 @@
         </p>
         <ol>
             <li>
-                Launch Burp Suite on a system that is network-accessible from the jailbroken device, and ensure the
-                proxy listener is bound to an accessible network interface and port.
+                Launch Burp Suite on a system that is network-accessible from the jailbroken device, and ensure the proxy listener is bound to an accessible network interface and port.
             </li>
             <li>
                 On the jailbroken device, open Cydia and navigate to the Sources tab.
@@ -63,18 +58,13 @@
                 Tap the Add button located at the top left-hand corner.
             </li>
             <li>
-                Populate the APT URL prompt with the IP address (or hostname) and port number of your Burp Proxy
-                listener, using HTTP as the protocol, e.g. http://[burp-host-ip]:8080. If Cydia is not able to connect,
-                verify that your Burp Proxy listener is configured to listen on the relevant network interface, and that
-                connections are not being blocked by your computer's host firewall or by device segregation in your
-                wireless network.
+                Populate the APT URL prompt with the IP address (or hostname) and port number of your Burp Proxy listener, using HTTP as the protocol, e.g. <span class="InlineCode">http://[burp-host-ip]:8080</span>. If Cydia is not able to connect, verify that your Burp Proxy listener is configured to listen on the relevant network interface, and that connections are not being blocked by your computer's host firewall or by device segregation in your wireless network.
             </li>
             <li>
                 Tap the Done button to finish.
             </li>
             <li>
-                Install Mobile Assistant from the new Cydia package source in the normal way. Either search for Mobile
-                Assistant or browse the new source's packages and tap Install.
+                Install Mobile Assistant from the new Cydia package source in the normal way. Either search for Mobile Assistant or browse the new source's packages and tap Install.
             </li>
         </ol>
     </div>

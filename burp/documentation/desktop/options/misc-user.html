@@ -16,32 +16,29 @@
             <a href="../../index.html">Documentation</a>
         </li>
         <li>
-            <a href="../index.html">Desktop Editions</a>
+            <a href="../index.html">Desktop editions</a>
         </li>
         <li>
             <a href="index.html">Options</a>
         </li>
         <li>
-            <a href="misc-user.html">Misc User Options</a>
+            <a href="misc-user.html">Misc user options</a>
         </li>
     </ol>
 </section>
-<section class="container edition-labels">
-	<span class="pro-edition-feature-label">Professional</span>&nbsp;<span class="pro-edition-feature-label">Community</span>
+<section class="container editionlabels-wrapper">
+    <label class="editionlabel is-professional">Professional</label>
+    <label class="editionlabel is-community">Community</label>
 </section>
 <section class="maincontainer">
     <div class="container main">
-        <h1>Misc User Options</h1>
+        <h1>Misc user options</h1>
         <p>
-            This tab contains settings for <a href="#hotkeys">hotkeys</a>, <a href="#automatic-project-backup">automatic
-                project backup</a>, <a href="#proxy-interception">Proxy interception</a>, <a href="#rest-api-options">REST API</a>, <a href="#proxy-interception">Proxy
-                    history logging</a>, location of <a href="#temporary-files-location">temporary files</a>, and <a href="#performance-feedback">performance
-                        feedback</a>.
+            This tab contains settings for <a href="#hotkeys">hotkeys</a>, <a href="#automatic-project-backup">automatic project backup</a>, <a href="#proxy-interception">Proxy interception</a>, <a href="#rest-api-options">REST API</a>, <a href="#proxy-interception">Proxy history logging</a>, location of <a href="#temporary-files-location">temporary files</a>, and <a href="#performance-feedback">performance feedback</a>.
         </p>
         <h2 id="hotkeys">Hotkeys</h2>
         <p>
-            These settings let you configure hotkeys for common actions. Numerous types of actions can be assigned a
-            hotkey, in the following categories:
+            These settings let you configure hotkeys for common actions. Numerous types of actions can be assigned a hotkey, in the following categories:
         </p>
         <ul>
             <li>
@@ -55,18 +52,14 @@
             </li>
         </ul>
         <p>
-            A number of hotkeys are configured by default. Note that very many more actions are available to have a
-            hotkey assigned, if you use them frequently.
+            A number of hotkeys are configured by default. Note that very many more actions are available to have a hotkey assigned, if you use them frequently.
         </p>
         <p>
-            All hotkeys must use the Control key (or the Command key on OSX), and may also use Shift and other available
-            modifiers. Note that on some Windows installations the Ctrl+Alt combination is treated by Windows as
-            equivalent to AltGr, and so may result in typed characters appearing when pressed in text fields.&nbsp;
+            All hotkeys must use the Control key (or the Command key on OSX), and may also use Shift and other available modifiers. Note that on some Windows installations the Ctrl+Alt combination is treated by Windows as equivalent to AltGr, and so may result in typed characters appearing when pressed in text fields.
         </p>
-        <h2 id="automatic-project-backup">Automatic Project Backup</h2>
+        <h2 id="automatic-project-backup">Automatic project backup</h2>
         <p>
-            Automatic project backup saves a copy of the Burp project file periodically in the background. The following
-            options are available:
+            Automatic project backup saves a copy of the Burp project file periodically in the background. The following options are available:
         </p>
         <ul>
             <li>
@@ -82,7 +75,7 @@
                 Whether to delete the backup file on clean shutdown of Burp.
             </li>
         </ul>
-<h2 id="rest-api-options">REST API options</h2>
+        <h2 id="rest-api-options">REST API options</h2>
         <p>
             The REST API can be used by other tools to integrate with Burp Suite.
         </p>
@@ -109,45 +102,35 @@
         <p>
             Once the service is configured, you can browse the API documentation and interact with the API at [Service URL]/[API key].
         </p>
-<h2 id="proxy-interception">Proxy Interception</h2>
+        <h2 id="proxy-interception">Proxy interception</h2>
         <p>
-            This option lets you configure whether Proxy interception should be enabled when Burp is started up. You can
-            choose to always enable interception, always disable interception, or to restore the setting from when Burp
-            was last closed.
+            This option lets you configure whether Proxy interception should be enabled when Burp is started up. You can choose to always enable interception, always disable interception, or to restore the setting from when Burp was last closed.
         </p>
-        <h2 id="proxy-history-logging">Proxy History Logging</h2>
+        <h2 id="proxy-history-logging">Proxy history logging</h2>
         <p>
-            This option controls whether adding items to Target scope will automatically set the <a href="../tools/proxy/options/index.html#miscellaneous">Proxy option</a> to stop sending out-of-scope items to the history or
-            other Burp tools. Setting Burp to do this is useful to avoid accumulating project data for out-of-scope
-            items.
+            This option controls whether adding items to Target scope will automatically set the <a href="../tools/proxy/options/index.html#miscellaneous">Proxy option</a> to stop sending out-of-scope items to the history or live tasks. Setting Burp to do this is useful to avoid accumulating project data for out-of-scope items.
         </p>
-        <h2 id="temporary-files-location">Temporary Files Location</h2>
+        <h2 id="temporary-files-location">Temporary files location</h2>
         <p>
             These settings let you configure where Burp stores its temporary files.
         </p>
         <p>
-            By default, Burp creates a directory within the temporary file location provided by the platform. You can
-            modify this behavior to use a custom directory - for example, on a different volume, or which is not
-            world-readable.
+            By default, Burp creates a directory within the temporary file location provided by the platform. You can modify this behavior to use a custom directory - for example, on a different volume, or which is not world-readable.
         </p>
         <p>
-            On Mac OS X, you may find that the default temporary file location is sometimes cleared following system
-            hibernation, causing Burp to lose its temporary files. You can resolve this problem by configuring a custom
-            location for Burp to store its temporary files.
+            On Mac OS X, you may find that the default temporary file location is sometimes cleared following system hibernation, causing Burp to lose its temporary files. You can resolve this problem by configuring a custom location for Burp to store its temporary files.
         </p>
         <p>
             Changes to this setting take effect the next time Burp starts up.
         </p>
-        <h2 id="performance-feedback">Performance Feedback</h2>
+        <h2 id="performance-feedback">Performance feedback</h2>
         <p>
             You can help improve Burp by submitting anonymous feedback about Burp's performance.
         </p>
         <p>
-            Feedback only contains technical information about Burp's internal functioning, and does not identify you in
-            any way. If you do report a bug, you can help us diagnose any problems that your instance of Burp has
-            encountered by including your debug ID.
+            Feedback only contains technical information about Burp's internal functioning, and does not identify you in any way. If you do report a bug, you can help us diagnose any problems that your instance of Burp has encountered by including your debug ID.
         </p>
-</div>
+    </div>
 </section>
 </body>
 </html>
